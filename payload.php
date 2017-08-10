@@ -17,4 +17,4 @@ $postBody = $_POST['payload'];
 
 $file = "list.txt";
 
-ile_put_contents($file, "Post: " . $postBody);
+file_put_contents($file, "Post: " . $postBody);
