@@ -15,7 +15,6 @@ $payload = json_decode(file_get_contents('php://input'));
 
 $file = "list.txt";
 
-
 file_put_contents($file, $payload->ref." ".$payload->sender->name);
 
 echo "SUCCESSsssSS";
