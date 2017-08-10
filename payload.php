@@ -21,7 +21,7 @@ function run() {
     $file = "list.txt";
 
 
-    file_put_contents($file, $postBody);
+    file_put_contents($file, "lala");
 }
 
 try {
