@@ -11,6 +11,8 @@
 $error_mail = "martin.brack@kommunal.at";
 
 function run() {
+
+
     global $rawInput;
 
 
