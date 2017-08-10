@@ -18,5 +18,4 @@ $file = "list.txt";
 
 file_put_contents($file, $payload->ref." ".$payload->sender->name);
 
-
 echo "SUCCESSsssSS";
