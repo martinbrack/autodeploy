@@ -12,9 +12,9 @@
 
 `git pull origin master`;
 
-    $postBody = $_POST['payload'];
+$postBody = $_POST['payload'];
 
 
 $file = "list.txt";
 
-    file_put_contents($file, "Post: ".$postBody);
+ile_put_contents($file, "Post: " . $postBody);
