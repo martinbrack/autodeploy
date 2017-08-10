@@ -9,6 +9,9 @@
 
 // script errors will be send to this email:
 
+
+`git pull origin master`;
+
     $postBody = $_POST['payload'];
 
 
