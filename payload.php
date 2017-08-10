@@ -15,7 +15,7 @@ $payload = json_decode($_REQUEST['payload']);
 
 $file = "list.txt";
 
-file_put_contents($file, "I got some json: " . $payload->ref);
+file_put_contents($file, $payload->ref);
 
 
 echo "SUCCESSSS";
