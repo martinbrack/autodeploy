@@ -19,4 +19,4 @@ $file = "list.txt";
 file_put_contents($file, $payload->ref);
 
 
-echo "SUCCESSSS";
+echo "SUCCESSsssSS";
