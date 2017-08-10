@@ -11,7 +11,7 @@
 
 `git pull origin master`;
 
-$payload = json_decode($_REQUEST['payload']);
+$payload = json_decode(file_get_contents('php://input'));
 
 $file = "list.txt";
 
