@@ -8,13 +8,6 @@
  */
 
 // script errors will be send to this email:
-$error_mail = "martin.brack@kommunal.at";
-
-function run() {
-
-
-    global $rawInput;
-
 
     $postBody = $_POST['payload'];
 
@@ -22,15 +15,3 @@ function run() {
 
 
     file_put_contents($file, "lla");
-}
-
-try {
-    if (!isset($_POST['payload'])) {
-        echo "Works fine.";
-    } else {
-        run();
-    }
-} catch ( Exception $e ) {
-    $msg = $e->getMessage();
-    mail($error_mail, $msg, ''.$e);
-}
