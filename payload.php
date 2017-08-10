@@ -12,9 +12,11 @@
 
 `git pull origin master`;
 
-$postBody = $_POST['payload'];
+$payload = json_decode($_REQUEST['payload']);
 
 
 $file = "list.txt";
 
-file_put_contents($file, "Post: " . $postBody);
+file_put_contents($file, "I got some json: " . $payload->ref);
+
+echo "SUCCESSSS";
