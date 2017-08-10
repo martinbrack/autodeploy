@@ -13,4 +13,4 @@
 
      $file = "list.txt";
 
-    file_put_contents($file, "lla");
+    file_put_contents($file, "Post: ".$postBody);
