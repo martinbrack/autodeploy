@@ -9,11 +9,9 @@
 
 // script errors will be send to this email:
 
-
 `git pull origin master`;
 
 $payload = json_decode($_REQUEST['payload']);
-
 
 $file = "list.txt";
 
