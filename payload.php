@@ -1,21 +1,12 @@
 <?php
 
-/*
- * Endpoint for Github Webhook URLs
- *
- * see: https://help.github.com/articles/post-receive-hooks
- *
- */
-
-// script errors will be send to this email:
-
-`git pull origin master`;
-
 $payload = json_decode(file_get_contents('php://input'));
 
-$file = "list.txt";
-
-
-file_put_contents($file, $payload->ref." ".$payload->pusher->name);
-
-echo "SUCCESSsssSS";
+if($payload->ref === "refs/heads/master"){
+    `cd production`;
+    `git pull origin master`;
+}
+elseif($payload->ref === "refs/heads/staging"){
+    `cd staging`;
+    `git pull origin staging`;
+}
